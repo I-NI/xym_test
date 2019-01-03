@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.example.xym21.myapplication.MainActivity">
+    <TextView
+        android:id="@+id/main_tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="乔巴酱"
+        android:textSize="25sp"/>
+
+
+
+    <ImageView
+        android:id="@+id/imageViewspec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baby" />
+
+    <Button
+        android:id="@+id/buttonLocal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="升级才能拥有的特效"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/buttonCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Level 2！看清你的美" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="米娜桑，快给乔巴购买装备吧！"
+        android:textSize="18sp" />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+        <!-- 第一行-->
+        <TableRow>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:width="0dp"
+                android:text="经验值："
+                android:textSize="15sp" />
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="3" />
+            <TextView
+                android:id="@+id/tv_main_life"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:width="0dp"
+                android:text="我还小" />
+        </TableRow>
+        <!-- 第二行-->
+        <TableRow android:layout_marginTop="5dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:width="0dp"
+                android:text="攻击力："
+                android:textSize="15sp" />
+            <ProgressBar
+                android:id="@+id/progressBar2"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="3" />
+            <TextView
+                android:id="@+id/tv_main_atk"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:width="0dp"
+                android:text="我不懂" />
+        </TableRow>
+        <!-- 第三行-->
+        <TableRow android:layout_marginTop="5dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:width="0dp"
+                android:text="敏捷："
+                android:textSize="15sp" />
+            <ProgressBar
+                android:id="@+id/progressBar3"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="3" />
+            <TextView
+                android:id="@+id/tv_main_speed"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:width="0dp"
+                android:text="教教我" />
+        </TableRow>
+        <!-- 第二行-->
+        <TableRow android:layout_marginTop="5dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:width="0dp"
+                android:text="等级："
+                android:textSize="15sp" />
+            <ProgressBar
+                android:id="@+id/progressBar4"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="3" />
+            <TextView
+                android:id="@+id/tv_main_level"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:width="0dp"
+                android:text="我不懂" />
+        </TableRow>
+    </TableLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <Button
+            android:id="@+id/btn_master"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:drawableRight="@android:drawable/ic_menu_add"
+            android:onClick="click"
+            android:drawablePadding="3dp"
+            android:text="购买装备"
+            android:textSize="14sp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <Button
+            android:id="@+id/btn_fight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:drawableRight="@android:drawable/ic_menu_add"
+            android:onClick="click_f"
+            android:drawablePadding="3dp"
+            android:text="战斗(准备好，十秒钟挑战)"
+            android:textSize="14sp"/>
+    </RelativeLayout>
+</LinearLayout>

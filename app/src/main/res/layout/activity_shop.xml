@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="请选择您要购买的商品"
+        android:textColor="@color/colorAccent"
+        android:textSize="22sp" />
+    <!-- 第一个商品-->
+    <TableLayout
+        android:id="@+id/TL1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.17">
+        <TableRow>
+            <TextView
+                android:id="@+id/tv_life1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="经验值" />
+        </TableRow>
+        <TableRow>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="28dp"
+                android:src="@android:drawable/ic_menu_info_details" />
+            <TextView
+                android:id="@+id/tv_name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="快来氪金" />
+            <TextView
+                android:id="@+id/tv_atk1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="攻击力" />
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="购买"
+                android:onClick="click_1"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/tv_speed1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="速度" />
+        </TableRow>
+    </TableLayout>
+    <!-- 第二个商品-->
+    <TableLayout
+        android:id="@+id/TL2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_weight="0.17">
+        <TableRow>
+            <TextView
+                android:id="@+id/tv_life2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="生命力" />
+        </TableRow>
+        <TableRow>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="28dp"
+                android:src="@android:drawable/ic_menu_info_details" />
+            <TextView
+                android:id="@+id/tv_name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="商品名称" />
+            <TextView
+                android:id="@+id/tv_atk2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="攻击力" />
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="购买"
+                android:onClick="click_2"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/tv_speed2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="速度" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
